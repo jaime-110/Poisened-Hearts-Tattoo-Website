@@ -1,0 +1,20 @@
+Poisoned Hearts Tattoo website
+2216 Washington Blvd, Ogden, UT 84401
+
+FILES
+index.html  - the whole website (code, styles, and gallery photos are all built in)
+
+TO PUT IT ONLINE
+Upload this folder (or index.html) to a host such as Cloudflare Pages or Netlify,
+then connect your domain in the host's Custom domains settings.
+
+TO MAKE THE CONSULT FORM SEND TO THE OWNERS
+1. Create a free Formspree form using the owners' email.
+2. Open index.html in a text editor and find this line:
+     var FORM_ENDPOINT='';
+3. Paste your Formspree link between the quotes, for example:
+     var FORM_ENDPOINT='https://formspree.io/f/xxxxxxxx';
+4. Save, re-upload, and submit a test request from the live site.
+
+Until a link is added, the form opens a pre-filled text to (801) 814-8280 and
+offers email/copy buttons instead.
